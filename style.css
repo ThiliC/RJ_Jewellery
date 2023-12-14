@@ -1,0 +1,592 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.page-container{
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.name-container img{
+    position: fixed-block;
+    top: 20px;
+    left: 0;
+    width: 100%; 
+    height: auto%; 
+    background-size: cover; 
+    background-position: center; 
+    z-index: 9999; 
+}
+.navbar{
+    width:100%;
+    height:auto%;
+    position: fixed-block;
+    display:flex;
+    justify-content: center; /*center ul*/
+    z-index: 9999;/*ul on top*/
+    background-color: rgb(242, 235, 241);/*ul baclground color*/
+}
+.navbar ul{
+    padding: 25px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+.navbar li{
+    display:inline-block;
+    list-style: none;
+    
+}
+.navbar li a{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0px 40px;
+    color:black;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.navbar li a:hover{
+    color: rgb(220, 31, 132);/*nav color*/
+    transition: all 0.5s ease 0s;/*color changing speed*/
+}
+
+.banner-container{
+    width:100%;
+    height:auto%;
+    position: fixed-block;
+    display:flex;
+    justify-content: center; /*center ul*/
+    z-index: 9999;/*ul on top*/
+}
+
+.banner-container video{
+    position: fixed-block;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: auto%; 
+    background-size: cover; 
+    background-position: center; 
+    z-index: 9999; 
+
+}
+
+.grid-container{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: Auto;
+    align-content: center;
+    grid-template-columns: auto auto ;
+    gap: 50px;
+    padding: 10px;
+    top: 50px;
+  }
+
+.grid-container img{
+    position: relative;
+    display: block;
+    width: 100%; 
+    height: 100%; 
+    z-index: -1
+    transition: border 0.3s, box-shadow 0.3s;
+
+}
+
+.grid-container img:hover {
+    border: 5px solid #69c9c9;
+    box-shadow: 0 0 50px #f693c4;
+
+}
+
+.grid-container .centered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    cursor: pointer;
+}
+
+.grid-container .centered:hover {
+    color: rgb(220, 31, 132); 
+    transition:rgb(227, 121, 178);
+  }
+
+.grid-container p {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color:solid black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    text-decoration: none; 
+    padding-top: 10px; 
+    cursor: pointer;
+}
+
+.social_media-conrainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    TOP margin: 50PX; /* Adjust as needed */
+    
+}
+
+.social_media-conrainer img {
+    max-width: 100%;
+    padding: 50px; /* Make images responsive within their container */
+    height: auto;
+    margin: 20px; /* Adjust the spacing between images */
+    top margin: 50PX;
+}
+.navigation-links a{
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.1em;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+footer {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    color: black;
+    margin-top: 10px;
+  }
+
+@media only screen and (max-width: 600px) {
+    .page-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .name-container img {
+        position: relative; /* Change position to be relative for smaller screens */
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
+    }
+
+    .navbar ul {
+        padding: 10px 0;
+        margin: 0;
+        text-align: center; /* Center-align navigation items */
+    }
+
+    .navbar li {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .navbar li a {
+        display: block;
+        font-size: 16px; /* Adjust font size for smaller screens */
+        text-decoration: none;
+        color: black;
+    }
+
+    .banner-container {
+        display: none; /* Hide the banner for smaller screens */
+    }
+
+    .grid-container {
+        grid-template-columns: auto; /* Adjust grid layout for smaller screens */
+        gap: 20px; /* Adjust gap for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+        top: 20px; /* Adjust top position for smaller screens */
+    }
+
+    .grid-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-container .centered {
+        display: none; /* Hide centered text for smaller screens */
+    }
+
+    .grid-container p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .social_media-conrainer{
+        flex-direction: column; /* Adjust direction for smaller screens */
+        align-items: center;
+    }
+
+    .social_media-conrainer img {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    footer {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+/*style sheet for STATEMENT*/
+. {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+}
+
+#cover{
+    width: 100%;
+    height: 10%;
+}
+
+.statement-rings {
+    background-image: url('Images/decoration/watercolor\ statement.jpg'); /* Replace 'path_to_your_image.jpg' with your image path */
+    background-size: cover; /* Ensures the background image covers the entire element */
+    color: rgb(249, 208, 241); 
+    padding: 20px; 
+    filter:saturate(120%);
+}
+
+.statement-rings p {
+    font-size: 1.5vw;
+    text-transform: initial;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: rgb(3, 38, 38);
+}
+
+.signature-container {
+    margin-top: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.signature-row {
+    display: flex;
+    flex: 1 0 33.33%; /* Adjust to fit three rows per line */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%; /* Add width to make it fill the container */
+}
+
+.item {
+    width: 50%; /* Adjust width to fit five items per row */
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc; /* Add a border or remove as needed */
+    padding: 2% 5%; /* Use relative units for padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item p {
+    font-size: 1.0vw; /* Use viewport width as a relative unit for font size */
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 1vw; /
+    cursor: pointer;
+}
+
+.item:hover {
+    border-color: rgb(25, 194, 224);
+}
+
+.item img:hover {
+    filter: brightness(85%) saturate(120%);
+}
+.navigation-links a{
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.1em;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+footer {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    color: black;
+    margin-top: 10px;
+  }
+
+@media screen and (max-width: 600px) {
+    .item {
+        grid-template-columns: 1fr;
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+        width: auto; 
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer p {
+        font-size: 0.5vw; /* Set an appropriate font size for smaller screens */
+    }
+}
+
+
+
+/*style sheet for EARRINGS*/
+
+. {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+}
+
+#cover{
+    width: 100%;
+    height: 10%;
+}
+
+.Earring {
+    background-image: url('Images/decoration/watercolor\ earring.jpg'); /* Replace 'path_to_your_image.jpg' with your image path */
+    background-size: cover; /* Ensures the background image covers the entire element */
+    color: rgb(249, 208, 241); 
+    padding: 10px; 
+    filter:saturate(120%);
+}
+
+.Earring p {
+    font-size: 1.5vw;
+    text-transform: initial;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: rgb(3, 38, 38);
+    
+}
+
+.Earring-container {
+    margin-top: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.Earring-row {
+    display: flex;
+    flex: 1 0 10.33%; /* Adjust to fit three rows per line */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 50%; /* Adjust width to fit five items per row */
+    text-align: center;
+    border: 1px solid #ccc; /* Add a border or remove as needed */
+    padding: 2% 5%; /* Use relative units for padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item p {
+    font-size: 1.0vw; /* Use viewport width as a relative unit for font size */
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 1vw; /
+    cursor: pointer;
+}
+
+.item:hover {
+    border-color: rgb(25, 194, 224);
+}
+
+.item img:hover {
+    filter: brightness(85%) saturate(120%);
+}
+footer {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    color: black;
+    margin-top: 10px;
+  }
+.navigation-links a{
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.1em;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .item {
+        grid-template-columns: 1fr;
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+        width: auto; 
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer p {
+        font-size: 0.5vw; 
+    }
+}
+
+
+/*Ring page*/
+
+
+. {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+}
+
+#cover{
+    width: 100%;
+    height: 10%;
+}
+
+.Ring {
+    background-image: url('Images/decoration/watercolor\ earring.jpg'); /* Replace 'path_to_your_image.jpg' with your image path */
+    background-size: cover; /* Ensures the background image covers the entire element */
+    color: rgb(249, 208, 241); 
+    padding: 10px; 
+    filter:saturate(120%);
+}
+
+.Ring p {
+    font-size: 1.5vw;
+    text-transform: initial;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: rgb(3, 38, 38);
+    
+}
+
+.Ring-container {
+    margin-top: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.Ring-row {
+    display: flex;
+    flex: 1 0 10.33%; /* Adjust to fit three rows per line */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 50%; /* Adjust width to fit five items per row */
+    text-align: center;
+    border: 1px solid #ccc; /* Add a border or remove as needed */
+    padding: 2% 5%; /* Use relative units for padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item p {
+    font-size: 1.0vw; /* Use viewport width as a relative unit for font size */
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 1vw; /
+    cursor: pointer;
+}
+
+.item:hover {
+    border-color: rgb(25, 194, 224);
+}
+
+.item img:hover {
+    filter: brightness(85%) saturate(120%);
+}
+.navigation-links a{
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.1em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-top: 50%;
+}
+  
+footer {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    color: black;
+    margin-top: 10px;
+  }
+
+@media screen and (max-width: 600px) {
+    .item {
+        grid-template-columns: 1fr;
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+        width: auto; 
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer p {
+        font-size: 0.5vw; 
+    }
+}
+
+
+
+
+
+
+
+ 
